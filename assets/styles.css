@@ -10,12 +10,11 @@ padding: 0;
 background-color: #FFFFFF;
 display: flex;
 flex-wrap: nowrap;
-justify-items: center;
+align-items: center;
 }
 
 .logo_ohmyfood{
 width: 200px;
-height: 34px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 2%;
@@ -313,6 +312,7 @@ opacity: 0;
 opacity: 1;
 transition: opacity 200ms;
 }
+
 .resto_info{
 margin-left: 4%;
 margin-top: 2%;
@@ -375,9 +375,7 @@ margin-right: 5%;
 .fleche{
 display: flex;
 margin-left: 5%;
-margin-top: 2.5%;
 width: 20px;
-height: 20px;
 }
 
 .resto_title{
@@ -393,15 +391,17 @@ margin-left: 2%;
 .main_resto{
 background-color: #F7F7F7;
 width: 80%;
-margin-left: 10%;
-margin-right: 10%;
+margin-left: auto;
+margin-right: auto;
 border-radius: 30px 30px 0 0;
 margin-top: -2%;
 padding-bottom: 4%;
 }
 
 .menu{
-margin-left: 10%;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .menu_parts{
 margin-left: 3%;
@@ -417,11 +417,6 @@ margin-bottom: 2%;
 text-align: unset;
 }
 
-
-.choixrepas{
-display: block;
-width: 70%;
-}
 .nomrepas{
 font-weight: 800;
 margin-left: 4%;
@@ -438,14 +433,18 @@ font-weight: 300;
 font-size: 1em;
 }
 
+.choixrepas{
+width: 90%;
+}
+
 .prix{
-width: 30%;
+display: flex;
+align-items:center;
+width: 10%;
 }
 
 .entrees_plats_desserts{
-margin-bottom: 4%;
-margin-right: 20%;
-margin-left: 10%;
+width:80%;
 }
 
 
@@ -493,91 +492,137 @@ margin-bottom: 1%;
 }
 /*animation commander*/
 .btn_cmd:hover {
-    filter: brightness(1.15);
-    box-shadow: 1px 1px 13px 8px rgba(0, 0, 0, 0.1);
+filter: brightness(1.15);
+box-shadow: 1px 1px 13px 8px rgba(0, 0, 0, 0.1);
 }
-/*debut animation entree_plat_dessert*/
-.desc_menu{
-animation-name:epd;
-animation-duration: 1000ms;
+/*fin animation commander*/
+/*debut animation coeur page resto*/
+#coeurresto{
+margin-left: 2%;
 }
+
+.resto_title:after{
+content:url(/assets/Images_textes/images/coeurplein.png);
+position: relative;
+margin-left: -2%;
+opacity: 0;
+}
+
+.resto_title:hover:after{
+opacity: 1;
+transition: opacity 200ms;
+}
+/*fin animation coeur page resto*/
+
+/*debut animation apparition decalage temps entree_plat_dessert*/
 .entrees{
-    animation-delay: -40ms; 
+animation-name: apparitiondecalee;
+animation-delay:3.5s;
+animation-duration: 1s;
+animation-fill-mode: forwards; 
 }
+
 .plats{
-    animation-delay: -200ms;
+animation-name: apparitiondecalee;
+animation-delay:6s;
+animation-duration: 1s;
+animation-fill-mode: forwards; 
 }
+
 .desserts{
-    animation-delay:-400ms;
+animation-name: apparitiondecalee;
+animation-delay:9s;
+animation-duration: 1s;
+animation-fill-mode: forwards; 
 }
 
-@keyframes epd{
-0%{
-    opacity: 0;
-    }
-40%{
-    opacity: 0.40;
+@keyframes apparitiondecalee{
+0%{opacity:0;}
+25%{opacity:0.25;}
+50%{opacity:0.50;}
+75%{opacity: 0.75;}
+100%{opacity: 1;}
 }
 
-70%{opacity: 0.70;
-}
-100%{
-    opacity: 1;
-}
-}
-/*fin animation entree_plat_dessert*/
+
+/*fin animation apparition decalage temps entree_plat_dessert*/
 
 /*debut animation coche de la droite vers la gauche*/
-
 .entrees:after{
 content: url(/assets/Images_textes/images/iconechoix.png);
 background-color: #99E2D0;
 text-align: center;
 padding: 10px;
 opacity: 0;
-display: inline-block;
+height: 70px;
+transition: 1s ease-in-out;
 }
+
 .entrees:hover:after{
-opacity: 1;
-width: 30%;
-margin-right: none;
+width: 40%;
 border-radius: 0 20px 20px 0;
-transition: all 200ms ease-in-out;
+opacity: 1;
 }
+
 .plats:after{
 content: url(/assets/Images_textes/images/iconechoix.png);
 background-color: #99E2D0;
 text-align: center;
 padding: 10px;
 opacity: 0;
-display: inline-block;
+height: 70px;
+transition: 1s ease-in-out;
 }
+
 .plats:hover:after{
-opacity: 1;
-width: 30%;
-margin-right: none;
+width: 40%;
 border-radius: 0 20px 20px 0;
-transition: all 200ms ease-in-out;
+opacity: 1;
 }
+
 .desserts:after{
 content: url(/assets/Images_textes/images/iconechoix.png);
 background-color: #99E2D0;
 text-align: center;
 padding: 10px;
 opacity: 0;
-display: inline-block;
-}
-.desserts:hover:after{
-opacity: 1;
-width: 30%;
-margin-right: none;
-border-radius: 0 20px 20px 0;
-transition: all 200ms ease-in-out;
+height: 70px;
+transition: 1s ease-in-out;
 }
 
+.desserts:hover:after{
+width: 40%;
+border-radius: 0 20px 20px 0;
+opacity: 1;
+}
 /*fin animation coche de la droite vers la gauche*/
 
 /*fin page restaurant*/
+
+/* animation loader*/
+.loader {
+position: absolute;
+margin-left: auto;
+margin-right:auto;
+top: 50%;
+left:50%;
+width: 100px;
+object-fit: cover;
+border-left: 20px solid #FF79DA;
+border-right: 20px solid grey;
+border-top: 20px solid #99E2D0;
+border-bottom: 20px solid #9356DC;
+border-radius: 100%;
+animation: spinner 3s linear forwards;
+}
+  
+@keyframes spinner {
+0% { transform: rotate(0deg); opacity: 1;}
+30% { transform: rotate(360deg);opacity: 0.9; }
+60% { transform: rotate(360deg);opacity: 0.6; }
+90% { transform: rotate(360deg);opacity: 0.3; }
+100% { transform: rotate(360deg);opacity: 0; }
+}
 
 /*--------------mobile -------------------------------*/
 @media (max-width: 780px) {
