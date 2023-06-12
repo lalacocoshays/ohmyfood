@@ -159,7 +159,7 @@ color: white;
 background:#9356DC;
 width:10px;
 border-radius: 50%;
-padding: 7px;
+padding: 12px 20px;
 text-align: center;
 font-weight: lighter;
 }
@@ -191,7 +191,7 @@ color: white;
 background:#9356DC;
 border-radius: 50%;
 width: 10px;
-padding: 7px;
+padding: 12px 20px;
 text-align: center;
 font-weight: lighter;
 }
@@ -225,7 +225,7 @@ color: white;
 background:#9356DC;
 border-radius: 50%;
 width: 10px;
-padding: 7px;
+padding: 12px 20px;
 text-align: center;
 font-weight: lighter;
 }
@@ -370,7 +370,6 @@ bottom: 35px;
 margin-right: 5%;
 }
 
-/*page de restaurant*/
 
 .fleche{
 display: flex;
@@ -434,19 +433,21 @@ font-size: 1em;
 }
 
 .choixrepas{
-width: 90%;
+display: flex;
+flex-direction: column;
+width: 95%;
 }
+
 
 .prix{
 display: flex;
 align-items:center;
-width: 10%;
+font-weight: bold;
 }
 
 .entrees_plats_desserts{
 width:80%;
 }
-
 
 .entrees{
 background-color: white;
@@ -456,6 +457,7 @@ line-height: 0.7em;
 margin-bottom: 2%;
 display: flex;
 flex-wrap: nowrap;
+overflow: hidden;
 }
 
 .plats{
@@ -490,13 +492,13 @@ width: 20%;
 text-align: center;
 margin-bottom: 1%;    
 }
-/*animation commander*/
+
 .btn_cmd:hover {
 filter: brightness(1.15);
 box-shadow: 1px 1px 13px 8px rgba(0, 0, 0, 0.1);
 }
-/*fin animation commander*/
-/*debut animation coeur page resto*/
+
+
 #coeurresto{
 margin-left: 2%;
 }
@@ -512,117 +514,88 @@ opacity: 0;
 opacity: 1;
 transition: opacity 200ms;
 }
-/*fin animation coeur page resto*/
 
-/*debut animation apparition decalage temps entree_plat_dessert*/
-.entrees{
-animation-name: apparitiondecalee;
-animation-delay:3.5s;
-animation-duration: 1s;
-animation-fill-mode: forwards; 
-}
-
-.plats{
-animation-name: apparitiondecalee;
-animation-delay:6s;
-animation-duration: 1s;
-animation-fill-mode: forwards; 
-}
-
-.desserts{
-animation-name: apparitiondecalee;
-animation-delay:9s;
-animation-duration: 1s;
-animation-fill-mode: forwards; 
-}
-
-@keyframes apparitiondecalee{
-0%{opacity:0;}
-25%{opacity:0.25;}
-50%{opacity:0.50;}
-75%{opacity: 0.75;}
-100%{opacity: 1;}
-}
-
-
-/*fin animation apparition decalage temps entree_plat_dessert*/
-
-/*debut animation coche de la droite vers la gauche*/
 .entrees:after{
 content: url(/assets/Images_textes/images/iconechoix.png);
 background-color: #99E2D0;
-text-align: center;
+display: flex;
+align-items: center;
 padding: 10px;
 opacity: 0;
-height: 70px;
 transition: 1s ease-in-out;
+width: 0%;
 }
 
 .entrees:hover:after{
-width: 40%;
 border-radius: 0 20px 20px 0;
 opacity: 1;
+width: 7%;
+margin-left: 2%;
 }
 
 .plats:after{
 content: url(/assets/Images_textes/images/iconechoix.png);
 background-color: #99E2D0;
-text-align: center;
+display: flex;
+align-items: center;
 padding: 10px;
 opacity: 0;
-height: 70px;
 transition: 1s ease-in-out;
+width: 0%;
 }
 
 .plats:hover:after{
-width: 40%;
 border-radius: 0 20px 20px 0;
 opacity: 1;
+width: 7%;
+margin-left: 2%;
 }
 
 .desserts:after{
 content: url(/assets/Images_textes/images/iconechoix.png);
 background-color: #99E2D0;
-text-align: center;
+display: flex;
+align-items: center;
 padding: 10px;
 opacity: 0;
-height: 70px;
 transition: 1s ease-in-out;
+width: 0%;
 }
 
 .desserts:hover:after{
-width: 40%;
 border-radius: 0 20px 20px 0;
 opacity: 1;
+width: 7%;
+margin-left: 2%;
 }
-/*fin animation coche de la droite vers la gauche*/
 
-/*fin page restaurant*/
+.entrees, .plats, .desserts{
+animation: slidein 2s forwards;
+}
+@keyframes slidein{
+0% {opacity:0; transform:translateX(900px)};
+100% {opacity:1; transform: translateX(0)};
+}
 
-/* animation loader*/
-.loader {
-position: absolute;
-margin-left: auto;
-margin-right:auto;
+.loader{
 top: 50%;
-left:50%;
-width: 100px;
-object-fit: cover;
-border-left: 20px solid #FF79DA;
-border-right: 20px solid grey;
-border-top: 20px solid #99E2D0;
-border-bottom: 20px solid #9356DC;
-border-radius: 100%;
+left: 40%;
+position:absolute;
+border: 20px solid #9356DC;
+border-radius: 50%;
+border-top: 20px solid slategray;
+width: 15%;
+height: 30%;
 animation: spinner 3s linear forwards;
 }
-  
-@keyframes spinner {
-0% { transform: rotate(0deg); opacity: 1;}
-30% { transform: rotate(360deg);opacity: 0.9; }
-60% { transform: rotate(360deg);opacity: 0.6; }
-90% { transform: rotate(360deg);opacity: 0.3; }
-100% { transform: rotate(360deg);opacity: 0; }
+
+
+@keyframes spinner{
+0% {opacity:1;z-index:9999;transform: rotate(0deg);}
+100% {opacity:0;z-index:-9999 ;transform: rotate(360deg);}
 }
+
+
 
 /*--------------mobile -------------------------------*/
 @media (max-width: 780px) {
