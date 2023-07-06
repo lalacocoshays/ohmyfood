@@ -42,11 +42,29 @@ animation: spin 3s linear forwards;
 100% {opacity:0;z-index: -100;}
 }
 
-.logo{
-width: 20%;
-margin-top: 2%;
-margin-bottom: 2%;
+.banner{
+background-color: #FFFFFF;
+display: flex;
+flex-wrap: nowrap;
+align-items: center;
 }
+
+.fleche{
+width: 30%;
+}
+.logo_ohmyfood{
+width: 60%;
+}
+
+.imgfleche{
+max-width: 100%;
+}
+
+.imgomf{
+max-width: 100%;
+}
+
+
 
 .location{
 background-color: #EAEAEA;
