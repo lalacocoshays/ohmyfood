@@ -42,42 +42,12 @@ animation: spin 3s linear forwards;
 100% {opacity:0;z-index: -100;}
 }
 
-
-.banner{
-background-color: #FFFFFF;
-display: flex;
-flex-wrap: nowrap;
-align-items: center;
-justify-content: center;
-}
-
 .logo{
 width: 20%;
 margin-top: 2%;
 margin-bottom: 2%;
 }
 
-.header_palettedugout,.header_delicedessens,.header_noteenchantee,.header_francaise{
-height: 700px;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-}
-
-.header_palettedugout{
-background-image: url(/assets/Images_textes/images/palettedugout.jpg);
-}
-.header_delicedessens{
-background-image: url(/assets/Images_textes/images/delicedessens.jpg);
-}
-
-.header_noteenchantee{
-background-image: url(/assets/Images_textes/images/noteenchantee.jpg);
-}
-
-.header_francaise{
-background-image: url(/assets/Images_textes/images/francaise.jpg);
-}
 
 
 .location{
@@ -313,6 +283,7 @@ white-space: nowrap;
 }
 
 .mention{
+font-family: "Roboto", sans-serif;
 display: flex;
 flex-wrap: nowrap;
 color: white;
@@ -320,7 +291,9 @@ font-weight: 100;
 margin-left: 5%;
 margin-right: 17%;
 white-space: nowrap;
+text-decoration: none;
 }
+
 
 #icone_reco1{
 margin-right: 3%;
@@ -343,150 +316,13 @@ margin-right: 5%;
 }
 
 
-.fleche{
-display: flex;
-margin-left: 5%;
-width: 20px;
-}
-
-
-.main_resto{
-background-color: #F7F7F7;
-width: 80%;
-margin-left: auto;
-margin-right: auto;
-border-radius: 30px 30px 0 0;
-margin-top: -2%;
-padding-bottom: 4%;
-}
-
-.menu{
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.menu_parts{
-margin-left: 3%;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-color: #000000;
-text-decoration: underline;
-text-decoration-color: #99E2D0;
-text-decoration-thickness: 3px;
-margin-bottom: 2%;
-text-align: unset;
-}
-
-
-.entrees:hover .slidecoche, .plats:hover .slidecoche, .desserts:hover .slidecoche{
-width: 5%;
-border-radius: 0 20px 20px 0;
-margin-left: 2%;
-padding-left:2.5%;
-background-color: #99E2D0;
-display: flex;
-align-items: center;
-transition: 300ms ease-in-out ;
-}
-
-.entrees:hover .choixrepas{
-text-overflow:ellipsis;
-word-break: break-all;
-overflow:hidden;
-white-space: nowrap;
-}
-
-.choixrepas{
-width: 100%;
-overflow: visible;
-white-space: normal;
-}
-
-.nomrepas{
-font-weight: 800;
-margin-left: 4%;
-margin-bottom: 0%;
-}
-
-.precrepas{
-margin-left: 4%;
-margin-top: 2%;
-margin-bottom: 3%;
-font-weight: 300;
-}
-
-    
-
-.entrees_plats_desserts{
-width:80%;
-}
-
-.entrees,.plats, .desserts{
-background-color: white;
-border-radius: 20px 20px 20px 20px;
-padding: 0.1%;
-line-height: 0.7em;
-margin-bottom: 2%;
-display: flex;
-flex-wrap: nowrap;
-width: 100%;
-}
-
-
-
-.btn_cmd{
-color: white;
-background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-border-radius: 25px;
-margin: 0 auto;
-padding: 2%;
-width: 20%;
-text-align: center;
-margin-bottom: 1%;    
-}
-
-.btn_cmd:hover {
-filter: brightness(1.15);
-box-shadow: 1px 1px 13px 8px rgba(0, 0, 0, 0.1);
-}
-
-.entrees, .plats, .desserts{ 
-animation: slidein 2s forwards;
-opacity:0;
-}
-
-.plats{
-animation-delay: 300ms;
-}
-
-.desserts{
-animation-delay:600ms;
-}
-
-@keyframes slidein{
-0% {opacity:0; transform: translateX(-900px);}
-100% {opacity:1; transform: translateX(0px);}
-}
-
-
-
 
 /*--------------mobile -------------------------------*/
 @media (max-width: 780px) {
 
 body{
 padding: 0%;
-margin:0%;
-}
-.logo_ohmyfood{
-margin-left: auto;
-margin-right: auto;
-margin-top: 4%;
-margin-bottom: 3%;
-}
+margin:0%;}
 
 .infobar{
 text-align: center;
@@ -584,30 +420,6 @@ margin-top: -7%;
 padding-left: 5%;
 padding-top: 6%;
 }
-
-
-.menu{
-display: flex;
-flex-direction: column;
-}
-
-.entrees_plats_desserts{
-width: 94%;
-}
-
-.entrees,.plats,.desserts{
-border-radius: 15px 15px 15px 15px;
-margin-top: 3%;
-}
-
-.nomrepas{
-margin-top: 5%;
-}
-.precrepas{
-margin-bottom: 5%;
-margin-top: 4%;
-}
-
 
 .footer_ohmyfood{
 display: flex;
