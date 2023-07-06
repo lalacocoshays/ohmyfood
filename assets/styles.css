@@ -48,8 +48,6 @@ margin-top: 2%;
 margin-bottom: 2%;
 }
 
-
-
 .location{
 background-color: #EAEAEA;
 padding-top: 1.5%;
@@ -403,22 +401,6 @@ align-items: center;
 .restocards{
 width: 100%;
 margin-bottom: 4%;
-}
-
-.header_palettedugout,.header_delicedessens,.header_noteenchantee,.header_francaise{
-max-width: 100%;
-height: 240px;
-object-fit: cover;
-}
-
-.main_resto{
-width: 100%;
-margin-top: -7%;
-}
-
-.resttitle{
-padding-left: 5%;
-padding-top: 6%;
 }
 
 .footer_ohmyfood{
