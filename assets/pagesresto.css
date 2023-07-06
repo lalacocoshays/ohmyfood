@@ -64,6 +64,10 @@ font-size: 30px;
 width: 24%;
 }
 
+.heart:hover{
+background:url(/assets/Images_textes/images/coeurplein.png) no-repeat;
+transition: 3s;
+}
 
 .menu_parts{
 margin-left: 3%;
@@ -176,56 +180,56 @@ animation-delay:600ms;
 }
 
 .footer_ohmyfood{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: right;
-    background-color: #353535;
-    padding-top: 5%;
-    padding-bottom: 2%;
-    font-size: 20px;
-    position: relative;
-    }
-    
-    .reco{
-    display: flex;
-    flex-wrap: nowrap;
-    font-weight: bold;
-    color: white;
-    white-space: nowrap;
-    }
-    
-    .mention{
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-wrap: nowrap;
-    color: white;
-    font-weight: 100;
-    margin-left: 5%;
-    margin-right: 17%;
-    white-space: nowrap;
-    text-decoration: none;
-    }
-    
-    
-    #icone_reco1{
-    margin-right: 3%;
-    }
-    #icone_reco2{
-    margin-right: 3%;
-    }
-    .footer_parts{
-    margin-right: 6%;
-    }
-    .ohmyfoodbtm{
-    font-family: 'Shrikhand';
-    font-style: italic;
-    font-weight:bold;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    bottom: 35px;
-    margin-right: 5%;
-    }
+display: flex;
+flex-wrap: nowrap;
+justify-content: right;
+background-color: #353535;
+padding-top: 5%;
+padding-bottom: 2%;
+font-size: 20px;
+position: relative;
+}
+
+.reco{
+display: flex;
+flex-wrap: nowrap;
+font-weight: bold;
+color: white;
+white-space: nowrap;
+}
+
+.mention{
+font-family: "Roboto", sans-serif;
+display: flex;
+flex-wrap: nowrap;
+color: white;
+font-weight: 100;
+margin-left: 5%;
+margin-right: 17%;
+white-space: nowrap;
+text-decoration: none;
+}
+
+
+#icone_reco1{
+margin-right: 3%;
+}
+#icone_reco2{
+margin-right: 3%;
+}
+.footer_parts{
+margin-right: 6%;
+}
+.ohmyfoodbtm{
+font-family: 'Shrikhand';
+font-style: italic;
+font-weight:bold;
+color: white;
+font-size: 20px;
+position: absolute;
+bottom: 35px;
+margin-right: 5%;
+}
     
 @media (maxwidth:780px){
 .menu{
