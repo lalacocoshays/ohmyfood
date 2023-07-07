@@ -1,6 +1,11 @@
 *{
 font-family: roboto, sans-serif;
 }
+.body{
+margin: 0;
+padding: 0;
+}
+
 .banner{
 background-color: #FFFFFF;
 display: flex;
@@ -84,28 +89,39 @@ text-align: unset;
 }
 
 
+
 .entrees:hover .slidecoche, .plats:hover .slidecoche, .desserts:hover .slidecoche{
-width: 5%;
+width: 30%;
 border-radius: 0 20px 20px 0;
 margin-left: 2%;
-padding-left:2.5%;
 background-color: #99E2D0;
 display: flex;
 align-items: center;
+text-align: center;
+justify-content: center;
 transition: 300ms ease-in-out ;
 }
 
-.entrees:hover .choixrepas{
-text-overflow:ellipsis;
-word-break: break-all;
-overflow:hidden;
+.entrees:hover .nomrepas, .entrees:hover .precrepas{
+text-overflow: ellipsis;
 white-space: nowrap;
+overflow: hidden;
+}
+
+.plats:hover .nomrepas, .plats:hover .precrepas{
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+}
+
+.desserts:hover .nomrepas, .desserts:hover .precrepas{
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
 }
 
 .choixrepas{
-width: 100%;
-overflow: visible;
-white-space: normal;
+width: 80%;
 }
 
 .nomrepas{
@@ -114,6 +130,7 @@ margin-left: 4%;
 margin-bottom: 0%;
 margin-top: 2%;
 }
+
 
 .precrepas{
 margin-left: 4%;
@@ -141,8 +158,6 @@ display: flex;
 flex-wrap: nowrap;
 width: 100%;
 }
-
-
 
 .btn_cmd{
 color: white;
@@ -231,45 +246,77 @@ bottom: 35px;
 margin-right: 5%;
 }
     
-@media (maxwidth:780px){
-.menu{
-display: flex;
-flex-direction: column;
+@media (max-width:780px){
+.fleche{
+width: 25%;
 }
 
-.entrees_plats_desserts{
-width: 94%;
+.logo_ohmyfood{
+width: 50%;
 }
 
-.entrees,.plats,.desserts{
-border-radius: 15px 15px 15px 15px;
-margin-top: 3%;
-}
-
-.nomrepas{
-margin-top: 5%;
-}
-.precrepas{
-margin-bottom: 5%;
-margin-top: 4%;
-}
 
 .main_resto{
 width: 100%;
-margin-top: -7%;
+margin-left: 0;
+margin-right: 0;
+}
+
+.resttitleheart{
+display: flex;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: baseline;
 }
 
 .resttitle{
-padding-left: 5%;
-padding-top: 6%;
+padding-left: unset;
+font-family: 'Shrikhand';
+font-weight: 700;
+font-size: 24px;
+width: 56%;
 }
 
 
+.entrees, .plats, .desserts{
+display: flex;
+border-radius: 15px 15px 15px 15px;
+margin-top: 4%;
+}
+
+.entrees:hover .choixrepas, .plats:hover .choixrepas, .dessert:hover .choixrepas{
+width: 70%;
+}
+
+.nomrepas{
+padding-top: 5%;
+}
+
+.precrepas{
+padding-bottom: 5%;
+padding-top: 4%;
+}
+
+.btn_cmd{
+width: 28%;
+}
 .footer_ohmyfood{
 display: flex;
 flex-direction: column;
 padding-left: 5%;
 }
+
+.ohmyfoodbtm{
+position: unset;
+order: 1;
+margin-bottom: 5%;
+font-weight: unset;
+}
+
+.footer_parts{
+margin-bottom: 2%;
+}
+
 .reco{
 display: block;
 margin: 0%;
@@ -282,16 +329,5 @@ font-weight: unset;
 display: block;
 margin: 0%;
 order: 3;
-margin-bottom: 2%;
-}
-
-.ohmyfoodbtm{
-position: unset;
-order: 1;
-margin-bottom: 5%;
-font-weight: unset;
-}
-.footer_parts{
-margin-bottom: 2%;
-}
+margin-bottom: 2%;}
 }
