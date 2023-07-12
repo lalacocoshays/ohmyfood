@@ -92,12 +92,19 @@ text-align: unset;
 .entrees:hover .choixrepas, .plats:hover .choixrepas, .desserts:hover .choixrepas{
 width: 70%;
 transition: 300ms ease-in-out;
+}
+
+.entrees:hover .nomrepas, .plats:hover .nomrepas, .desserts:hover .nomrepas{
 text-overflow: ellipsis;
 white-space: nowrap;
 overflow: hidden;
 }
 
-
+.entrees:hover .precrepas, .plats:hover .precrepas, .desserts:hover .precrepas{
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+}
 
 
 .entrees_plats_desserts{
@@ -237,6 +244,7 @@ margin-right: 3%;
 .footer_parts{
 margin-right: 6%;
 }
+
 .ohmyfoodbtm{
 font-family: 'Shrikhand';
 font-style: italic;
