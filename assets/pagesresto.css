@@ -89,40 +89,61 @@ text-align: unset;
 }
 
 
+.entrees:hover .choixrepas, .plats:hover .choixrepas, .desserts:hover .choixrepas{
+width: 70%;
+transition: 300ms ease-in-out;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+}
 
-.entrees:hover .slidecoche, .plats:hover .slidecoche, .desserts:hover .slidecoche{
-width: 30%;
-border-radius: 0 20px 20px 0;
-margin-left: 2%;
-background-color: #99E2D0;
+
+
+
+.entrees_plats_desserts{
+width:80%;
+overflow: hidden;
+}
+
+.entrees,.plats, .desserts{
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+padding: 0.1%;
+margin-bottom: 2%;
 display: flex;
+flex-wrap: nowrap;
 align-items: center;
-text-align: center;
-justify-content: center;
-transition: 300ms ease-in-out ;
+width: 100%;
 }
 
-.entrees:hover .nomrepas, .entrees:hover .precrepas{
-text-overflow: ellipsis;
-white-space: nowrap;
-overflow: hidden;
-}
-
-.plats:hover .nomrepas, .plats:hover .precrepas{
-text-overflow: ellipsis;
-white-space: nowrap;
-overflow: hidden;
-}
-
-.desserts:hover .nomrepas, .desserts:hover .precrepas{
-text-overflow: ellipsis;
-white-space: nowrap;
-overflow: hidden;
-}
 
 .choixrepas{
-width: 80%;
+width: 90%;
+flex-grow: 0;
+flex-shrink: 0;
 }
+
+.prix{
+width: 10%;
+flex-grow: 0;
+flex-shrink: 0;
+}
+
+.slidecoche{
+display:none;
+}
+
+.entrees:hover .slidecoche, .plats:hover .slidecoche, .desserts:hover .slidecoche{
+display:unset;
+width: 20%;
+aspect-ratio: 2;
+background-color: #99E2D0;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 0 20px 20px 0;
+margin-left: 2%;
+} 
 
 .nomrepas{
 font-weight: 800;
@@ -139,25 +160,6 @@ margin-bottom: 2%;
 font-weight: 300;
 }
 
-.prix{
-display: flex;
-align-items: center;
-}
-
-.entrees_plats_desserts{
-width:80%;
-}
-
-.entrees,.plats, .desserts{
-background-color: white;
-border-radius: 20px 20px 20px 20px;
-padding: 0.1%;
-line-height: 0.7em;
-margin-bottom: 2%;
-display: flex;
-flex-wrap: nowrap;
-width: 100%;
-}
 
 .btn_cmd{
 color: white;
@@ -285,16 +287,12 @@ margin-top: 4%;
 }
 
 .entrees:hover .choixrepas, .plats:hover .choixrepas, .dessert:hover .choixrepas{
-width: 70%;
+width: 68%;
 }
 
-.nomrepas{
-padding-top: 5%;
-}
-
-.precrepas{
-padding-bottom: 5%;
-padding-top: 4%;
+.slidecoche{
+padding-top: 2%;
+padding-bottom: 2%;
 }
 
 .btn_cmd{
