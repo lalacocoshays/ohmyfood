@@ -50,6 +50,11 @@ align-items: center;
 justify-content: center;
 }
 
+.logo_ohmyfood{
+display: flex;
+justify-content: center;
+}
+
 .location{
 background-color: #EAEAEA;
 padding-top: 1.5%;
@@ -163,14 +168,13 @@ white-space: nowrap;
 position: relative;
 }
 
-#icone_btn1,#icone_btn2,#icone_btn3{
+#iconebtn{
 margin-right: 7%;
 margin-left: 2%;
 }
 
-#icone_btn01,#icone_btn02, #icone_btn03{
-position: absolute;
-left: -12px;
+#numberbtn{
+translate:-50%;
 color: white;
 background:#9356DC;
 width:10px;
@@ -330,6 +334,10 @@ text-align: center;
 margin: 0 auto;
 padding: 2%;
 }
+
+imgomf{
+width: 50%;
+}
 h1{
 display: flex;
 align-items: center;
@@ -363,10 +371,7 @@ margin-bottom: 8%;
 margin-left: 6%;
 font-size: 25px;
 }
-#icone_btn01, #icone_btn02, #icone_btn03{
-width: unset;
-padding: 1px 5px;
-}
+
 .btn_ftn {
 display: flex;
 flex-direction: column;
