@@ -90,7 +90,7 @@ text-align: unset;
 
 
 .entrees:hover .choixrepas, .plats:hover .choixrepas, .desserts:hover .choixrepas{
-width: 60%;
+flex: 60% 0 0;
 }
 
 .entrees:hover .nomrepas, .plats:hover .nomrepas, .desserts:hover .nomrepas{
@@ -119,23 +119,24 @@ margin-bottom: 2%;
 display: flex;
 flex-wrap: nowrap;
 align-items: stretch;
-width: 100%;
 overflow:hidden;
+width:100%;
 }
 
 .choixrepas{
-width: 80%;
+flex: 80% 0 0;
 transition: 300ms ease-in-out;
+white-space: nowrap;
 }
 
 .prix{
-width: 20%;
+flex: 20% 0 0;
 display:flex;
 align-items: center;
 }
 
 .slidecoche{
-width:20%;
+flex:20% 0 0;
 }
 
 .entrees:hover .slidecoche, .plats:hover .slidecoche, .desserts:hover .slidecoche{
@@ -151,6 +152,7 @@ font-weight: 800;
 margin-left: 4%;
 margin-bottom: 0%;
 margin-top: 2%;
+white-space: nowrap;
 }
 
 
@@ -159,6 +161,7 @@ margin-left: 4%;
 margin-top: 2%;
 margin-bottom: 2%;
 font-weight: 300;
+white-space: nowrap;
 }
 
 
