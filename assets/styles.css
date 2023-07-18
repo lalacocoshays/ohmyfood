@@ -335,7 +335,11 @@ margin: 0 auto;
 padding: 2%;
 }
 
-imgomf{
+.logo_ohmyfood{
+padding-top:2%;
+}
+
+.imgomf{
 width: 50%;
 }
 h1{
