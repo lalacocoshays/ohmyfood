@@ -278,8 +278,8 @@ margin-right: 0;
 .resttitleheart{
 display: flex;
 flex-wrap: nowrap;
-justify-content: center;
-align-items: baseline;
+justify-content: space-evenly;
+align-items: center;
 }
 
 .resttitle{
@@ -287,7 +287,12 @@ padding-left: unset;
 font-family: 'Shrikhand';
 font-weight: 700;
 font-size: 24px;
-width: 56%;
+width: 62%;
+margin-left: 7%;
+}
+
+.heart{
+width: 26%;
 }
 
 .entrees_plats_desserts {
