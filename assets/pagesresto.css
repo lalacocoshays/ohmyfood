@@ -93,6 +93,12 @@ text-align: unset;
 flex: 60% 0 0;
 }
 
+.entrees:hover .choixrepas, .plats:hover .choixrepas, .desserts:hover .choixrepas{
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+}
+
 .entrees:hover .nomrepas, .plats:hover .nomrepas, .desserts:hover .nomrepas{
 text-overflow: ellipsis;
 white-space: nowrap;
@@ -157,10 +163,10 @@ white-space: nowrap;
 
 
 .precrepas{
+font-weight: 300;
 margin-left: 4%;
 margin-top: 2%;
 margin-bottom: 2%;
-font-weight: 300;
 white-space: nowrap;
 }
 
