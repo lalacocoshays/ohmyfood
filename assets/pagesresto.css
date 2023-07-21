@@ -99,25 +99,6 @@ border-radius: 0 20px 20px 0;
 } 
     
 
-.entrees:hover .choixrepas, .plats:hover .choixrepas, .desserts:hover .choixrepas{
-text-overflow: ellipsis;
-white-space: nowrap;
-overflow: hidden;
-}
-
-.entrees:hover .nomrepas, .plats:hover .nomrepas, .desserts:hover .nomrepas{
-text-overflow: ellipsis;
-white-space: nowrap;
-overflow: hidden;
-}
-
-.entrees:hover .precrepas, .plats:hover .precrepas, .desserts:hover .precrepas{
-text-overflow: ellipsis;
-white-space: nowrap;
-overflow: hidden;
-}
-
-
 .entrees_plats_desserts{
 width:80%;
 overflow: hidden;
@@ -137,7 +118,9 @@ width:100%;
 
 .choixrepas{
 flex: 80% 0 0;
+text-overflow: ellipsis;
 white-space: nowrap;
+overflow: hidden;
 transition: 400ms ease-in-out;
 }
 
@@ -149,10 +132,10 @@ align-items: center;
 
 .slidecoche{
 flex:20% 0 0;
-transition: 400ms ease-in-out;
 display: flex;
 align-items: center;
 justify-content: center;
+transition: 400ms ease-in-out;
 }
 
 
@@ -161,7 +144,9 @@ font-weight: 800;
 margin-left: 4%;
 margin-bottom: 0%;
 margin-top: 2%;
+text-overflow: ellipsis;
 white-space: nowrap;
+overflow: hidden;
 }
 
 
@@ -170,7 +155,9 @@ font-weight: 300;
 margin-left: 4%;
 margin-top: 2%;
 margin-bottom: 2%;
+text-overflow: ellipsis;
 white-space: nowrap;
+overflow: hidden;
 }
 
 
