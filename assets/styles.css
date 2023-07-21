@@ -20,9 +20,12 @@ animation: pspin 3s linear forwards;
 }
 
 .loader {
-position: fixed;
-top:50%;
-left:50%;
+margin:auto;
+left:0;
+right:0;
+top:0;
+bottom:0;
+position:fixed;
 border: 16px solid #f3f3f3; 
 border-top: 16px solid #34db55; 
 border-radius: 50%;
