@@ -93,6 +93,12 @@ text-align: unset;
 flex: 60% 0 0;
 }
 
+.entrees:hover .slidecoche, .plats:hover .slidecoche, .desserts:hover .slidecoche{
+background-color: #99E2D0;
+border-radius: 0 20px 20px 0;
+} 
+    
+
 .entrees:hover .choixrepas, .plats:hover .choixrepas, .desserts:hover .choixrepas{
 text-overflow: ellipsis;
 white-space: nowrap;
@@ -131,8 +137,8 @@ width:100%;
 
 .choixrepas{
 flex: 80% 0 0;
-transition: 300ms ease-in-out;
 white-space: nowrap;
+transition: 400ms ease-in-out;
 }
 
 .prix{
@@ -143,15 +149,12 @@ align-items: center;
 
 .slidecoche{
 flex:20% 0 0;
+transition: 400ms ease-in-out;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
-.entrees:hover .slidecoche, .plats:hover .slidecoche, .desserts:hover .slidecoche{
-background-color: #99E2D0;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 0 20px 20px 0;
-} 
 
 .nomrepas{
 font-weight: 800;
