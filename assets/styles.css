@@ -171,12 +171,12 @@ white-space: nowrap;
 position: relative;
 }
 
-#iconebtn{
+.iconebtn{
 margin-right: 7%;
 margin-left: 2%;
 }
 
-#numberbtn{
+.numberbtn{
 translate:-50%;
 color: white;
 background:#9356DC;
