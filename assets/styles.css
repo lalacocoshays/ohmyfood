@@ -177,7 +177,7 @@ margin-left: 2%;
 }
 
 .numberbtn{
-translate:-50%;
+transform:translate(-50%);
 color: white;
 background:#9356DC;
 width:10px;
@@ -232,7 +232,7 @@ border-radius: 2px;
 font-weight: 700;
 font-size: 18px;
 padding:10px;
-color:99E2D0;
+color:#99E2D0;
 text-align: center;
 }
 
