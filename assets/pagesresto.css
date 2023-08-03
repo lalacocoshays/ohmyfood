@@ -286,6 +286,12 @@ margin-left: 7%;
 width: 26%;
 }
 
+.heart:hover{
+background:url(../assets/Images_textes/images/coeurplein.png) no-repeat;
+transition: 3s;
+}
+
+
 .entrees_plats_desserts {
 width: 94%;}
 
