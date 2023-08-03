@@ -259,7 +259,7 @@ width:10%;
 }
 
 .heart:hover{
-background:url(/assets/Images_textes/images/coeurplein.png) no-repeat;
+background:url(./Images_textes/images/coeurplein.png) no-repeat;
 transition: 3s;
 }
 
